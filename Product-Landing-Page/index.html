@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1968 Clos de la Roche | Domaine Ponsot</title>
+    <link rel="icon" href="logo-icon.png" type="image/gif">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/erk2dhw.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- START HEADER -->
+    <header id="header" class="header">
+        <div class="header-container">
+            <div id="logo-container">
+                <img id="header-img" src="logo.png" alt="Domaine Ponsot Logo">
+            </div>
+            <div id="nav-container">
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#history">History</a></li>
+                        <li><a class="nav-link" href="#fields">Our Fields</a></li>
+                        <li><a class="nav-link" href="#notes">Reviews</a></li>
+                        <li><a class="nav-link" href="#bid">Send Your Bid</a></li>
+                    </ul>
+                </nav>
+        </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START MAIN -->
+    <main>
+        <div id="hero" class="section">
+            <div class="container">
+                <div class="one-third">
+                    <img id="hero-img" src="Hero-Img.png" alt="1968 Clos De La Roche">
+                </div>
+                <div id="hero-text" class="two-thirds">
+                    <h4>Vintage Burgundy</h4>
+                    <h1>Clos de la Roche</h1>
+                </div>
+            </div>
+        </div>
+        <div id="history" class="section">
+            <div class="container">
+                <div class="one-half">
+                    <h2><span class="olive-text">Domaine Ponsot:</span> Purity & Precision</h2>
+                    <p>Domaine Ponsot is a wine producer in Burgundy, France that produces white and red wine. They are best known for their Morey-Saint-Denis Blanc 1er cru Clos des Monts Luisants — the only premier cru Burgundy made entirely from <strong>Aligoté</strong> — and their flagship reds, the <strong>Clos de la Roche</strong>, <strong>Cuvée Vieilles Vignes</strong>, and the <strong>Clos St. Denis Cuvée Très Vieilles Vignes</strong>.</p>
+                    <a class="button" href="http://www.domaine-ponsot.com/" target="_blank">Learn More</a>
+                </div>
+                <div id="video" class="one-half">
+                    <iframe width="520" height="300" src="https://www.youtube.com/embed/rqsrxhVV7us?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="fields" class="section">
+            <div class="container">
+                <div class="two-thirds">
+                    <h2>Our Fields</h2>
+                    <p>Unfettered by the latest fashions, we have always sought to express the richness of Burgundy terroir through "natural" cultivation practices. Human intervention is limited and only applied to the help that the vine needs, without ever trying to force it in any way. Of course, this way of working is only possible with full knowledge of the facts, and current technology allows us to check the state of the soil, vegetation and maturity as never before. And we make full use of what it has to offer. In summary, our family's long tradition of letting Nature do most of the work means that today the conditions of our vineyards are particularly good. And every intervention on our part is dictated by circumstance, in which both common sense and the most natural products possible are the order of the day. What we have always been doing is now being advocated by most technicians and names invented to describe practices that were already well-known … several thousand years ago!</p>
+                </div>
+                <div class="one-third">
+                </div>
+            </div>
+        </div>
+        <div id="notes" class="section">
+            <div class="container">
+                <div class="one-third">
+                    <img id="review-img" src="Review-img.png" alt="1968 Clos De La Roche">
+                </div>
+                <div class="two-thirds">
+                    <h3>95-97 Points - Robert Parker's Wine Advocate</h3>
+                    <p>The first vintage produced since the departure of Laurent Ponsot, the 2017 Clos de la Roche Grand Cru Cuvée Vieilles Vignes soars from the glass with a deep and complex bouquet of rose petal, wild berries, plums, sweet spices, wood smoke and rich soil. On the palate, it's full-bodied, layered and velvety, with an elegantly textural attack, excellent depth and concentration and an ample chassis of fine-grained tannins that are almost entirely concealed by a generous core of vibrant fruit. The finish is long, intense and stony. One of the wines of the vintage, this magical Clos de la Roche stands out for its striking dimension and completeness.</p>
+                    <a class="button" href="https://www.klwines.com/p/i?i=1156101" target="_blank">Read More Reviews</a>
+                </div>
+            </div>
+        </div>
+        <div id="bid" class="section">
+            <div class="container">
+                <div class="one-half">
+                    <img src="logo-icon.png" alt="Domaine Ponsot Logo Icon">
+                    <h3>Bidding starts at:</h3>
+                    <h2 id="bid-price">2,000 USD</h2>
+                </div>
+                <!-- START FORM -->
+                <div class="one-half">
+                    <form id="form" action="thankyou.html" method="post">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required><br>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required><br>
+                        <label for="bid">Your Bid</label><br>
+                        <input type="number" id="bid" name="bid" placeholder="Starts at 2,000 USD" required><br>
+                        <label for="msg">Message (optional)</label><br>
+                        <textarea id="msg" name="msg"></textarea><br>
+                        <input id="submit" type="submit" value="Submit my Bid">
+                    </form>
+                </div>
+                <!-- END FORM -->
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN -->
+    <!-- START FOOTER -->
+    <footer id="footer">
+        <div class>
+            <p id="footer-text">Copyright &copy; 2020. Domaine-Ponsot.</p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+</body>
+</html>
