@@ -1,0 +1,301 @@
+/* All Elements */
+* {
+    font-family: work-sans, sans-serif;
+    transition: all 0.4s ease-in-out;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+background: #444;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #222;
+}
+
+/* Body */
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #F0EDEA;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Main Element */
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sections */
+#section1, #section2, #section3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8%;
+}
+
+#section1 {
+    min-height: 100vh;
+}
+
+#section2 {
+    background-color: #ffffff;
+}
+
+#section3 {
+    background-image: url('lazarus.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#section2, #section3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Two Column Layout */
+.one-half {
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.one-third {
+    flex-basis: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-thirds {
+    flex-basis: 65%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section 1 Text Container */
+#text-div {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section 1 Image*/
+#sylvia {
+    min-height: 300px;
+    width: 85%;
+    height: auto;
+    margin-top: 25px; 
+}
+
+/* Section 1 Bouncing Arrow */
+#arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    height: 24px;
+    -webkit-animation: bounce 1s infinite alternate;
+    animation: bounce 1s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-12px); }
+}
+
+/* Section 2 Divider */
+#divider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin-top: -40px;
+    z-index: 2;
+}
+
+#divider2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    margin-bottom: -40px;
+    z-index: 2;
+    transform: rotate(180deg);
+}
+
+/* Section 2 Image and Container */
+#image-div {
+    flex-basis: 50%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 25px 0;
+}
+
+#image {
+    min-height: 300px;
+    width: 60%;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-caption {
+    font-size: 15px;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    margin: -5px 0 8px;
+}
+
+/* All Text */
+h1, h2, h3, p {
+    color: #222222;
+    margin: 10px 0;
+}
+
+h1 {
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-size: 5.5rem;
+    line-height: 1.1em;
+}
+
+h2 {
+    font-family: tenez, sans-serif;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.4em;
+    margin: 0 0 20px 0;
+    color: #222222;
+}
+
+h3 {
+    font-size: 0.8rem;
+    line-height: 1.4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #c84a4e;
+}
+
+p {
+    line-height: 1.7em;
+    margin: 20px 0;
+}
+
+.has-dropcap:first-letter {
+    float: left;
+    font-size: 8rem;
+    line-height: 0.65;
+    margin: 0.1em 0.1em 0.2em 0;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    color: #c84a4e;
+  }
+
+#poem-title {
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* Buttons */
+.black-button {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #ffffff;
+    background-color: #222222;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.black-button:hover {
+    background-color: #000000;
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(200,74,78,1);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(200,74,78,1);
+    box-shadow: 8px 8px 0px 0px rgba(200,74,78,1);
+}
+
+/* Footer */
+#footer {
+    padding: 25px 0;
+    background-color: #222222;
+}
+
+#footer-text {
+    color: rgba(225,225,225,0.7);
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Mobile Settings */
+@media only screen and (max-width: 1199px) {
+    body, html {
+        font-size: 15px;
+    }
+
+    #section1, #section3 {
+        flex-direction: column;
+    }
+
+    #section2 {
+        flex-direction: column-reverse;    
+    }
+
+    #text-div {
+        margin: 40px 0 0;
+    }
+
+    #image {
+        margin-top: 40px;
+    }
+
+    h1, h2, h3, h4 {
+        text-align: center;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    #poem-excerpt p {
+        text-align: center;
+    }
+
+    .button-wrapper {
+        text-align: center;
+    }
+
+    #divider, #divider2 {
+        width: 150%;
+    }
+}
