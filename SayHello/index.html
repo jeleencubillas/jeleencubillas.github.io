@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Say Hello</title>
+</head>
+<body>
+    <main>
+        <h1>This is the greeting calculator.<br>Click any name to sayHello and sayGoodbye!</h1>
+        <!-- Name Input Form -->
+        <div id="name-form">
+            <!-- Name Input Area -->
+            <input id="name-field" type="text" placeholder="Enter a name...">
+            <button id="enter-name">Submit</button>
+        </div>
+        <!-- Calculator Body -->
+        <div id="calculator">
+            <!-- Display Screen -->
+            <div id="display-screen">
+                <span id="display-text">0</span>
+            </div>
+            <!-- Calculator Keys -->
+            <div class="calculator__keys">
+                <!-- Name Buttons -->
+                <button id="name-1">Aida</button>
+                <button id="name-2">Lorna</button>
+                <button id="name-3">Fe</button>
+                <!-- Main Action Buttons -->
+                <button id="say-hello" class="key--equal">sH</button>
+                <button id="say-bye" class="key--equal">sG</button>
+                <button id="clear">C</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
