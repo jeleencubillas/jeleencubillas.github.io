@@ -37,6 +37,8 @@ function start() {
     ];
     // Call Make Marks Function
     makeMarks();
+    // Default Message
+    gameStatus.textContent = "Click any cell to start the game";
 }
 // Call init Function
 start();
