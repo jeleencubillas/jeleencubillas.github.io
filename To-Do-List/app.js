@@ -7,6 +7,7 @@ const clear = document.querySelector(".clear"); // Clear or Refresh Button
 const dateElement = document.getElementById("date"); // Date Today
 const list = document.getElementById("list"); // List Area
 const input = document.getElementById("input"); // Input Area
+const plusButton = document.querySelector(".plus-button"); // Plus Button
 
 // Classes
 const CHECK = "fa-check-circle";
@@ -40,8 +41,8 @@ function addToDo(toDo, id, done, trash) {
     list.insertAdjacentHTML(position, text);
 }
 
-// Enable Add Item When Pressing Enter
-document.addEventListener( "keyup", function(event) {
+// Add To Do Item
+function addToDoItem(event) {
     if(event.keyCode == 13) {
         const toDo = input.value;
         // Check if input is empty
@@ -62,7 +63,12 @@ document.addEventListener( "keyup", function(event) {
         // Clear the input area
         input.value = "";
     }
-});
+}
+
+// Enable Add Item When Pressing Enter
+document.addEventListener( "keyup", addToDoItem );
+// Enable Add Item When Clicking Plus Button
+plusButton.addEventListener( "click", addToDoItem );
 
 // Complete To Do
 function completeToDo(element) {
